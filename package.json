@@ -1,0 +1,50 @@
+{
+	"name": "profiles",
+	"version": "0.1.0",
+	"private": false,
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"test:unit": "vue-cli-service test:unit",
+		"lint": "vue-cli-service lint",
+		"test": "cross-env NODE_ENV=test jest --verbose --silent",
+		"test:watch": "npm run test -- --watch",
+		"start": "cross-env NODE_ENV=production node index.js",
+		"dev": "cross-env NODE_ENV=development nodemon index.js"
+	},
+	"dependencies": {
+		"ol": "^6.5.0",
+		"register-service-worker": "^1.7.1",
+		"vue": "^2.6.11",
+		"vue-router": "^3.2.0",
+		"vuetify": "^2.4.0",
+		"vuex": "^3.4.0",
+		"cors": "2.8.5",
+		"cross-env": "7.0.3",
+		"express": "4.17.1"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^5.14.1",
+		"@testing-library/vue": "^5.8.1",
+		"@vue/cli-plugin-eslint": "~4.5.0",
+		"@vue/cli-plugin-pwa": "~4.5.0",
+		"@vue/cli-plugin-router": "~4.5.0",
+		"@vue/cli-plugin-unit-jest": "~4.5.0",
+		"@vue/cli-plugin-vuex": "~4.5.0",
+		"@vue/cli-service": "~4.5.0",
+		"@vue/eslint-config-prettier": "^6.0.0",
+		"@vue/test-utils": "^1.0.3",
+		"eslint": "^6.7.2",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-vue": "^6.2.2",
+		"prettier": "^2.2.1",
+		"sass": "~1.32.0",
+		"sass-loader": "^10.0.0",
+		"vue-cli-plugin-vuetify": "~2.4.1",
+		"vue-template-compiler": "^2.6.11",
+		"vuetify-loader": "^1.7.0",
+		"jest": "27.0.6",
+		"nodemon": "2.0.12",
+		"supertest": "6.1.4"
+	}
+}
