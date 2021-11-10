@@ -62,7 +62,7 @@ export default {
 			this.dialog = false;
 			const favoritesToSave = { name: this.favoritesName, favorites: this.favorites };
 			console.log(favoritesToSave);
-			await fetch(`https://localhost:3000/api/favorites`, {
+			await fetch(`http://localhost:3000/api/favorites`, {
 				// await fetch(`https://serene-bastion-81525.herokuapp.com/api/favorites`, {
 				method: 'POST',
 				mode: 'cors', // no-cors, *cors, same-origin
